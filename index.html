@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="xml">  
+<head> 
+    <title>Welcome to Webpack</title>
+    <script src="./dist/bundle.js"></script>
+    <script>
+        function displayPersonsLabel(){
+            const size = document.getElementById('quantity').value
+            const sortProps = [
+                {
+                    "name": "name",
+                    "order": "asc"
+                },
+                {
+                    "name": "age",
+                    "order": "asc"
+                }
+            ]
+            document.getElementById("demo").innerHTML = '';
+            document.getElementById("demo").appendChild( window.buildTable(size,sortProps));
+            }
+</script>
+</head>
+    <body>
+        <div>
+         <label for="quantity">Data Size:</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="100">   
+          <input type = "button" onclick = "displayPersonsLabel()" value = "Generate Data"/>     
+        </div>
+        <div></div>
+        <div id ="demo"></div>
+ 
+    </body>
+</html>
