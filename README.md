@@ -22,7 +22,7 @@ It is a simple application that makes use of
 - npm
 - webpack 5
 - babel to trasnpile to ES5
-- HTMLs
+- HTML
 
 It generates list of random persons with a name, age, and image.
 ![](https://github.com/nileshsalpe/webpack-tutorial/blob/main/docs/images/sample-ui.png)
